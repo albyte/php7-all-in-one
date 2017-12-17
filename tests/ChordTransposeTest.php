@@ -32,7 +32,7 @@ class ChordTransposeTest extends \PHPUnit_Framework_TestCase
             'D + 3 = F' => ['D', 3, 'F'],
             'A + 4 = Db' => ['A', 4, 'Db'],
             'D# + 5 = G#' => ['D#', 5, 'G#'],
-            'D - 3 = C!?' => ['D', -3, 'C'],
+            'D - 3 = B' => ['D', -3, 'B'],
             'Db +14 = Eb' => ['Db', 14, 'Eb'],
         ];
     }
