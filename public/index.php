@@ -44,8 +44,8 @@ $src = param('src', 'C');
 $dst = param('dst', 'C');
 
 $text = param('text', <<<TEXT
-|  G  |  G  |  Em | Em |
-|  C  |  D7 |  G  | G  |
+|  C  |  C  |  Am | Am |
+|  F  |  G7 |  C  | C  |
 TEXT
 );
 $error = '';
