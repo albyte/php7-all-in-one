@@ -13,6 +13,15 @@ function param($key, $default = '')
 }
 
 /**
+ * @param $str
+ * @return string
+ */
+function h($str)
+{
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+
+/**
  * @param $name
  * @param $value
  */
@@ -66,7 +75,7 @@ if (!empty($src) && !empty($dst) && !empty($text)) {
         <?php make_select('dst', $dst); ?>
     </div>
     <div>
-        <textarea name="text" rows="8" cols="100"><?= $text ?></textarea>
+        <textarea title="chord text" name="text" rows="8" cols="100"><?= h($text) ?></textarea>
     </div>
     <div>
         <button type="submit">transpose</button>
